@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "engines": {
-    "node": "^10.13 || 12 || 14 || 15",
+    "node": ">=14.0.0",
     "npm": ">=6"
   },
   "dependencies": {
@@ -41,7 +41,7 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "craco build",
     "test": "craco test",
     "lint": "eslint .",
@@ -53,7 +53,7 @@
     "*.js": [
       "npm run lint:fix"
     ],
-    "*.{js, jsx, json, html, css}": [
+    "*.{js,jsx,json,html,css}": [
       "npm run format"
     ]
   },
